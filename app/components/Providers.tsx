@@ -10,8 +10,8 @@ export default function CartProvider({ children }: { children: ReactNode }) {
       mode="payment"
       cartMode="client-only"
       stripe={process.env.NEXT_PUBLIC_STRIPE_KEY as string}
-      successUrl="https://ecommerceasier-kl5wrkg53-asier-nogueiras-projects.vercel.app/stripe/success"
-      cancelUrl="https://ecommerceasier-kl5wrkg53-asier-nogueiras-projects.vercel.app/stripe/error"
+      successUrl="https://ecommerceasier.vercel.app/stripe/success"
+      cancelUrl="https://ecommerceasier.vercel.app/stripe/error"
       currency="USD"
       billingAddressCollection={false}
       shouldPersist={true}
